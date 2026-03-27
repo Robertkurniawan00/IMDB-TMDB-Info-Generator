@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDB TMDB Info Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-container">
+    <div class="control-panel glass-effect">
+        <h2><span class="highlight">⚙️ IMDB/TMDB</span> Generator</h2>
+        
+        <div class="input-group">
+            <label>1. TMDB API Key:</label>
+            <input type="text" id="apiKey" value="4c5fdc962b3063f6a67719dda52769cf" readonly class="locked-input">
+        </div>
+
+        <div class="input-group">
+            <label>2. IMDb ID (Example: tt11971598):</label>
+            <input type="text" id="imdbId" placeholder="e.g., tt11971598" autocomplete="off">
+        </div>
+
+        <div class="input-group">
+            <label>3. YouTube Trailer Link / ID:</label>
+            <input type="text" id="ytInput" placeholder="Paste full link or ID here..." autocomplete="off">
+        </div>
+
+        <button id="generateBtn" onclick="generateTemplate()">
+            <span id="btnText">Generate Template</span>
+            <div id="loader" class="spinner" style="display: none;"></div>
+        </button>
+    </div>
+
+    <div class="result-panel glass-effect">
+        <div class="panel-header">
+            <h3>Visual Preview</h3>
+        </div>
+        <div id="visual-preview" class="preview-box">
+            <p class="placeholder-text">Your template will appear here...</p>
+        </div>
+
+        <div class="panel-header" style="margin-top: 30px;">
+            <h3>HTML Result</h3>
+            <button class="copy-btn" onclick="copyCode()">📋 Copy Code</button>
+        </div>
+        <textarea id="output-code" readonly placeholder=""></textarea>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
