@@ -15,7 +15,7 @@ This program will instantly generate a ready-to-use HTML template for movie blog
 2. Get a [TMDB API Key](https://www.themoviedb.org/settings/api) for free.
 3. Enter your TMDB API Key, IMDb ID (example: `tt11971598`), and YouTube ID (example: `dQw4w9WgXcQ`).
 4. Click **Generate**.
-5. Copy the HTML code that appears in the bottom box and paste it into the HTML editor mode of your blog or website.
+5. Copy the HTML or BBcode that appears in the bottom box and paste it into the HTML editor mode of your blog or website.
 
 # Based on
 * HTML5 & CSS3
