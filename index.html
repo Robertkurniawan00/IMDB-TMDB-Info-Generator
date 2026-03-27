@@ -27,10 +27,16 @@
             <input type="text" id="ytInput" placeholder="Paste full link or ID here..." autocomplete="off">
         </div>
 
-        <button id="generateBtn" onclick="generateTemplate()">
-            <span id="btnText">Generate Template</span>
-            <div id="loader" class="spinner" style="display: none;"></div>
-        </button>
+        <div class="button-group">
+            <button id="btnHtml" class="action-btn html-btn" onclick="generateTemplate('html')">
+                <span id="textHtml">Generate HTML</span>
+                <div id="loaderHtml" class="spinner" style="display: none;"></div>
+            </button>
+            <button id="btnBbcode" class="action-btn bbcode-btn" onclick="generateTemplate('bbcode')">
+                <span id="textBbcode">Generate BBCode</span>
+                <div id="loaderBbcode" class="spinner" style="display: none;"></div>
+            </button>
+        </div>
     </div>
 
     <div class="result-panel glass-effect">
@@ -42,7 +48,7 @@
         </div>
 
         <div class="panel-header" style="margin-top: 30px;">
-            <h3>HTML Result</h3>
+            <h3>Result Output</h3>
             <button class="copy-btn" onclick="copyCode()">📋 Copy Code</button>
         </div>
         <textarea id="output-code" readonly placeholder=""></textarea>
